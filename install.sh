@@ -15,7 +15,7 @@ echo -n "Changing to the $DOTFILES_DIR directory ..."
 cd $DOTFILES_DIR
 echo "done"
 
-for file in `ls $DOTFILES_DIR/ --ignore "install.sh"`; do
+for file in `ls $DOTFILES_DIR/ --ignore "install.sh" | grep -v "README.md"`; do
 	if [[ -e ~/.$file ]] && [[ ! -L ~/.$file ]]
 	then
 		echo "Moving ~/.$file to $BACKUP_DIR"
