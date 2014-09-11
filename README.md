@@ -1,10 +1,12 @@
 dotfiles
 ========
 
-git clone https://github.com/louhibi/dotfiles ~/
+```bash
+$ git clone https://github.com/louhibi/dotfiles ~/
 
-cd ~/dotfiles
+$ cd ~/dotfiles
 
-chmod +x install.sh
+$ chmod +x install.sh
 
-./install.sh
+$ ./install.sh
+```
